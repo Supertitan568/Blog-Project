@@ -1,0 +1,52 @@
+/*Page Content*/
+.content-title {
+  text-align: center;
+}
+
+.comment {
+  padding-bottom: 5px;
+}
+
+#comment-form {
+  padding-top: 20px;
+}
+
+.post {
+    display:  block;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Top nav bar style rules*/
+
+header{
+  overflow: hidden;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#menu-bar {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+#title-text {
+  padding: 0;
+  margin: 0;
+  float:left;
+}
+

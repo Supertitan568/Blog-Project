@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    <h2 class="content-title">{{ title }}</h2>
+{% endblock page_title %}
+
+{% block page_content %}
+  <div class="post">
+    <p>{{ body_text | safe }}</p>
+    <div id="comment-form">
+      <hr>
+      <h3>Leave a comment:</h3>
+      <form method="post">
+          {% csrf_token %}
+          <div>
+              {{ form.author }}
+          </div>
+          <div>
+              {{ form.body }}
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+      <div class="comment">
+        <p>
+            On {{ comment.created_on.date }} <b>{{ comment.author }}</b> wrote:
+        </p>
+        <p>
+            {{ comment.body_text | linebreaks }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock page_content %}

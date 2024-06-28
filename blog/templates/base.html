@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>My Personal Blog</title>
+      <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  </head>
+  <body>
+  <header>
+    <div id="title-text">
+      <h1>My Personal Blog</h1>
+    </div>
+    <nav>
+      <div id="menu-bar">
+        <ul>
+          <!--This fail if post 4 or 5 do not exist-->
+          <li><a href="{% url "blog_index" %}">Home</a></li>
+          <li><a href="/post/5">About Me</a></li>
+          <li><a href="/post/4">Good Programming Resources</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  {% block page_title %}{% endblock page_title %}
+  {% block page_content %}{% endblock page_content %}
+  </body>
+</html>
