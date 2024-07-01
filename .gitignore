@@ -1,3 +1,5 @@
 # created by virtualenv automatically
 db.sqlite3
 blog_project/settings.py
+bin/
+lib/
