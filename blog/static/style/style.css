@@ -10,13 +10,30 @@
 #comment-form {
   padding-top: 20px;
 }
+#post-title-container {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
 
-.post {
+#post {
+  display:  block;
+  text-align: center;
+}
+#post-text-container {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+.post-link {
     display:  block;
     text-align: center;
     padding: 20px;
 }
 
+image{
+  margin-inline: auto;
+}
 /*Top nav bar style rules*/
 
 header{

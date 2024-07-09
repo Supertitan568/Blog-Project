@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 
 {% block page_title %}
-    <h2 class="content-title">{{ title }}</h2>
+    <div id="post-title-container">
+      <h2 id="post-title">{{ title }}</h2>
+    </div>
 {% endblock page_title %}
 
 {% block page_content %}
-  <div class="post">
-    <p>{{ body_text | safe }}</p>
+  <div id="post">
+    <div id="post-text-container">
+      <p id="post-text">{{ body_text | safe }}</p>
+    </div>
     <div id="comment-form">
       <hr>
       <h3>Leave a comment:</h3>

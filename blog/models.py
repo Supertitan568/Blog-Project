@@ -36,4 +36,4 @@ class Comment(models.Model):
 
 class Media(models.Model):
     name = models.CharField(max_length=30)
-    file = models.FileField(upload_to='/var/www/programming-titan.com/static/Media')
+    file = models.ImageField(upload_to='images')
