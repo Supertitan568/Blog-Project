@@ -33,6 +33,8 @@
 
 image{
   margin-inline: auto;
+  width: 100%;
+  max-width: 600px;
 }
 /*Top nav bar style rules*/
 
