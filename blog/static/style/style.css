@@ -57,6 +57,16 @@ li a {
   text-decoration: none;
 }
 
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: #0f0;
+}
+
+html {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
 #menu-bar {
   margin: 0;
   padding: 0;
